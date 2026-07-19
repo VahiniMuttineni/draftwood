@@ -100,7 +100,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 transition={{ duration: 0.2 }}
                 className="flex flex-col leading-tight whitespace-nowrap"
               >
-                <span className="text-sm font-semibold tracking-tight">DraftBoard</span>
+                <span className="text-sm font-semibold tracking-tight">Draftwood</span>
                 <span className="text-[10px] uppercase font-bold tracking-wider text-muted-foreground ml-1 hidden sm:inline-block">Workflow Platform</span>
               </motion.div>
             )}
