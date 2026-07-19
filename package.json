@@ -1,0 +1,13 @@
+{
+  "name": "executiveflow",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r run dev",
+    "db:start": "docker-compose -f backend/docker-compose.yml up -d postgres",
+    "lint": "pnpm -r run lint"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1784376888278,
+      "tag": "0000_lying_network",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1784399952745,
+      "tag": "0001_lush_kree",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1784448689939,
+      "tag": "0002_vengeful_bishop",
+      "breakpoints": true
+    }
+  ]
+}
