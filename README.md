@@ -1,6 +1,6 @@
 # Draftwood
 
-Draftwood (formerly ExecutiveFlow) is an Enterprise Document Approval & Workflow Management System. It is designed to be a robust, heavily auditable, state-machine driven SaaS application.
+Draftwood is an Enterprise Document Approval & Workflow Management System. It is designed to be a robust, heavily auditable, state-machine driven SaaS application.
 
 ## 🏗️ Architecture & Project Structure
 
