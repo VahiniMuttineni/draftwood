@@ -91,7 +91,7 @@ export default function Settings() {
           {activeTab === "Appearance" && (
             <Card className="border-border bg-card p-6 shadow-panel animate-in fade-in slide-in-from-bottom-2 duration-300">
               <h2 className="text-base font-semibold text-heading">Appearance</h2>
-              <p className="mt-0.5 text-xs text-muted-foreground">Customize how ExecutiveFlow looks on your device.</p>
+              <p className="mt-0.5 text-xs text-muted-foreground">Customize how Draftwood looks on your device.</p>
               
               <div className="mt-6">
                 <div className="mb-3 text-sm font-medium text-heading">Theme preference</div>

@@ -58,9 +58,9 @@ export default function LoginPage() {
         className="relative z-10 mx-auto flex max-w-[1440px] items-center justify-between px-8 py-6"
       >
         <div className="flex items-center gap-2.5">
-          <div className="grid h-9 w-9 place-items-center rounded-lg bg-sidebar text-white text-sm font-bold">EF</div>
+          <div className="grid h-9 w-9 place-items-center rounded-lg bg-sidebar text-white text-sm font-bold">DW</div>
           <div className="leading-tight">
-            <div className="text-sm font-semibold tracking-tight text-heading">ExecutiveFlow</div>
+            <div className="text-sm font-semibold tracking-tight text-heading">Draftwood</div>
             <div className="text-[11px] text-muted-foreground">Enterprise Workflow Platform</div>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function LoginPage() {
             Controlled document<br />workflows, at enterprise scale.
           </motion.h1>
           <motion.p variants={itemVariants} className="mt-6 max-w-lg text-base leading-relaxed text-body">
-            ExecutiveFlow moves documents through a strict Draft → Submitted → Approved → Published lifecycle
+            Draftwood moves documents through a strict Draft → Submitted → Approved → Published lifecycle
             with role-based permissions, optimistic concurrency protection, and an immutable audit trail — so nothing is ever bypassed, and every action is traceable.
           </motion.p>
           <motion.div variants={itemVariants} className="mt-10 grid gap-5 sm:grid-cols-3">
@@ -185,7 +185,7 @@ export default function LoginPage() {
           </motion.div>
 
           <p className="mt-6 border-t border-border/60 pt-4 text-[11px] leading-relaxed text-muted-foreground">
-            Session-scoped demo. In production, ExecutiveFlow uses your organization's SSO provider with SAML 2.0 or OIDC and enforces MFA per your security policy.
+            Session-scoped demo. In production, Draftwood uses your organization's SSO provider with SAML 2.0 or OIDC and enforces MFA per your security policy.
           </p>
         </motion.section>
       </main>

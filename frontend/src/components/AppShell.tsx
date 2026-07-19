@@ -90,7 +90,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         className="sticky top-0 flex h-dvh shrink-0 flex-col border-r border-sidebar-border bg-sidebar text-sidebar-foreground overflow-hidden z-40"
       >
         <div className={cn("flex items-center gap-2 px-4 py-5", collapsed && "justify-center px-2")}>
-          <div className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-primary text-primary-foreground text-sm font-bold">EF</div>
+          <div className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-primary text-primary-foreground text-sm font-bold">DW</div>
           <AnimatePresence mode="popLayout">
             {!collapsed && (
               <motion.div
