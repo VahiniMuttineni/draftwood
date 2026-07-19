@@ -18,10 +18,12 @@ import requestsRouter from "./routes/requests";
 
 const app = new Hono();
 
+import { env } from "./config/env";
+
 app.use(honoLogger());
 app.use(
   cors({
-    origin: ["http://localhost:3203", "https://draftwood.vercel.app"],
+    origin: [env.FRONTEND_URL],
     credentials: true,
   })
 );

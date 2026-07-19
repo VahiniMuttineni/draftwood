@@ -1,14 +1,20 @@
 import { createAuthClient } from "better-auth/react";
 import type { Paper, AuditEntry } from "./types";
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+if (!apiUrl) {
+  console.warn("NEXT_PUBLIC_API_URL is not defined!");
+}
+
 export const authClient = createAuthClient({
-  baseURL: process.env.NEXT_PUBLIC_API_URL 
-    ? process.env.NEXT_PUBLIC_API_URL.replace("/api/v1", "")
-    : "http://localhost:6203",
+  baseURL: apiUrl ? apiUrl.replace("/api/v1", "") : "",
 });
 
 export const getBaseUrl = () => {
-  const url = process.env.NEXT_PUBLIC_API_URL || "http://localhost:6203";
+  const url = process.env.NEXT_PUBLIC_API_URL;
+  if (!url) {
+    throw new Error("NEXT_PUBLIC_API_URL is not defined in the environment variables!");
+  }
   return url.replace("/api/v1", "");
 };
 

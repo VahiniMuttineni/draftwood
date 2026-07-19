@@ -7,6 +7,7 @@ const envSchema = z.object({
   DATABASE_URL: z.string().url(),
   BETTER_AUTH_SECRET: z.string().min(1),
   BETTER_AUTH_URL: z.string().url().default("http://localhost:6203"),
+  FRONTEND_URL: z.string().url().default("http://localhost:3203"),
   LOG_LEVEL: z.enum(["fatal", "error", "warn", "info", "debug", "trace", "silent"]).default("info"),
   PORT: z.coerce.number().default(6203),
 });

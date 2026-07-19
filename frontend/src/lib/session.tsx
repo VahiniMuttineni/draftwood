@@ -23,9 +23,10 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       if (data?.user) {
         setRoleLoading(true);
         try {
-          const baseUrl = process.env.NEXT_PUBLIC_API_URL 
-            ? process.env.NEXT_PUBLIC_API_URL.replace("/api/v1", "/api/auth")
-            : "http://localhost:6203/api/auth";
+          if (!process.env.NEXT_PUBLIC_API_URL) {
+            throw new Error("NEXT_PUBLIC_API_URL is not defined in the environment variables!");
+          }
+          const baseUrl = process.env.NEXT_PUBLIC_API_URL.replace("/api/v1", "/api/auth");
             
           const res = await fetch(`${baseUrl}/me/role`, { credentials: "include" });
           const roleData = await res.json();
