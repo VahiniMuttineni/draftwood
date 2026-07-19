@@ -21,7 +21,7 @@ const app = new Hono();
 app.use(honoLogger());
 app.use(
   cors({
-    origin: ["http://localhost:3203"],
+    origin: ["http://localhost:3203", "https://draftwood.vercel.app"],
     credentials: true,
   })
 );
