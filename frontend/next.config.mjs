@@ -7,7 +7,7 @@ const nextConfig = {
   },
   async rewrites() {
     const isDev = process.env.NODE_ENV !== "production";
-    const backendUrl = isDev ? "http://localhost:6203" : "https://draftwood-backend.onrender.com";
+    const backendUrl = isDev ? "http://localhost:6203" : "https://draftwood.onrender.com";
     return [
       {
         source: "/api/:path*",
