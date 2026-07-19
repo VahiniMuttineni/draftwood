@@ -27,8 +27,6 @@ const NAV: NavItem[] = [
   { to: "/dashboard",    label: "Dashboard",           icon: LayoutDashboard },
   { to: "/papers",    label: "My Papers",        icon: FileText,       roles: ["Author", "Administrator"] },
   { to: "/drafts",       label: "Drafts",              icon: FileText,       roles: ["Author", "Administrator"] },
-  { to: "/requests",     label: "Admin Requests",      icon: Inbox,          roles: ["Administrator"] },
-  { to: "/feedback",     label: "Viewer Feedback",     icon: MessageSquare,  roles: ["Administrator"] },
   { to: "/review",       label: "Review Queue",        icon: Inbox,          roles: ["Reviewer", "Administrator"] },
   { to: "/published",    label: "Published Documents", icon: Globe },
   { to: "/audit",        label: "Audit Logs",          icon: ScrollText,     roles: ["Administrator", "Reviewer"] },
